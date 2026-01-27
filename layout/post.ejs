@@ -1,0 +1,20 @@
+<div class="card post-full">
+    <span class="post-title article-title">
+        <%= page.title %>
+    </span>
+
+    <div class="post-meta">
+        <%= date(page.date, 'YYYY-MM-DD' ) %>
+        <% if (page.tags && page.tags.length) { %>
+            | <%- list_tags(page.tags, {
+                    show_count: false,
+                    style: 'none',
+                    separator: ', '
+                }) %>
+        <% } %>    
+    </div>
+
+    <div class="post-content">
+        <%- page.content %>
+    </div>
+</div>

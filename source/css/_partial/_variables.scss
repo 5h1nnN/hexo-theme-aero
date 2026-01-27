@@ -1,0 +1,17 @@
+:root {
+    --black-main: #000000;
+    --white-main: #f2f6f8;
+    /* You can customize the theme color here */
+    --primary-color: #3c7fb1;
+    --highlight-color: #aaddfa;
+    --secondary-color: #d8e1e7;
+
+    --aero-grad: linear-gradient(to bottom, 
+    color-mix(in srgb, var(--secondary-color), white 60%) 0%, 
+    var(--secondary-color) 50%, 
+    color-mix(in srgb, var(--secondary-color), black 10%) 51%, 
+    var(--secondary-color) 100%);
+
+    /* You can customize the background image here */
+    --bg-image: url(/source/image/bg.jpg);
+}

@@ -1,0 +1,175 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    color: var(--black-main);
+    margin: 0 auto;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 960px;
+    margin: auto;
+}
+
+
+.card {
+    background: rgba(from var(--primary-color) r g b / 0.3);
+    box-sizing: border-box;
+    box-shadow:
+        inset 0 0 20px rgba(from var(--primary-color) r g b / 0.8),
+        0 0 0 1px var(--white-main),
+        0 0 0 1.5px var(--black-main),
+        3px 3px 10px rgba(from var(--black-main) r g b / 0.6);
+    backdrop-filter: blur(2px);
+}
+
+.button-bar {
+    background: var(--aero-grad);
+    box-shadow: 
+        inset 0 0 0 1px var(--white-main),
+        0 0 0 0.5px var(--black-main),
+        3px 3px 10px rgba(from var(--black-main) r g b / 0.6);
+    box-sizing: border-box;
+}
+
+.button,
+.page-number::before,
+.extend::before {
+    display: block;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: var(--aero-grad);
+    box-shadow: 
+        inset 0 0 0 1px var(--white-main),
+        0 0 0 0.5px var(--black-main),
+        3px 3px 10px rgba(from var(--black-main) r g b / 0.6);
+    box-sizing: border-box;
+}
+
+
+.button::after,
+.page-number::after,
+.extend::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, 
+    var(--highlight-color) 0%, 
+    var(--highlight-color) 50%, 
+    color-mix(in srgb, var(--highlight-color), black 10%) 51%, 
+    var(--highlight-color) 80%);
+    box-shadow: inset 0 0 0 2px var(--highlight-color),
+        0 0 3px var(--highlight-color);
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.button:hover::after,
+.page-number:not(.current):hover::after,
+.extend:hover::after {
+    opacity: 1;
+}
+
+.button:active::after,
+.button.active,
+.page-number:not(.current):active:after,
+.extend:active::after {
+    opacity: 1;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.main-layout {
+    display: grid;
+    flex: 1;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
+    gap: 20px;
+}
+
+.widget {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.page-nav {
+    margin-top: 30px;
+    justify-content: right;
+}
+
+.page-number,
+.extend {
+    position: relative;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-number::before,
+.extend::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.page-number::after,
+.extend::after {
+    position: absolute;
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.current {
+    top: 1px;
+}
+
+.current::before {
+    box-shadow: 
+        inset 0 5px 5px rgba(0, 0, 0, 0.4),
+        0 0 0 0.5px var(--black-main);
+        /* 3px 3px 10px rgba(from var(--black-main) r g b / 0.6); */
+}
+
+.page-nav .space {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    color: var(--black-main);
+}
+
+
+
+.tag-none-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.tag-none-link:hover {
+    border-bottom-color: var(--primary-color);
+}

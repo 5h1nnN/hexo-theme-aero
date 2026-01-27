@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        <%= config.title %>
+    </title>
+    <%- css('css/style.css') %>
+    <% if (theme.favicon.enable) { %>
+        <% if (theme.favicon.icon) { %>
+            <link rel="icon" href="<%= url_for(theme.favicon.icon) %>">
+        <% } %>
+    <% } %>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <%- partial('_partial/header') %>
+            <div class="main-layout">
+                <aside>
+                    <%- partial('_partial/widget') %>
+                </aside>
+                <main id="pjax-container">
+                    <%- body %>
+                </main>
+            </div>
+            <!-- footer -->
+            <%- partial('_partial/footer') %>
+    </div>
+
+    <script src="/js/music.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new Pjax({
+                elements: 'a[href]:not([target]):not([data-no-pjax])',
+                selectors: [
+                    'title',
+                    '#pjax-container',
+                    '#pjax-header'
+                ]
+            })
+        })
+    </script>
+    <% if (theme.math.enable && page.mathjax) { %>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true
+                },
+                options: {
+                    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                }
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <% } %>
+</body>
+
+</html>

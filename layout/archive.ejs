@@ -1,0 +1,34 @@
+<section class="archive-container">
+    <% var lastYear; %>
+    <% page.posts.each(function(post, index) { %>
+        <% var currentYear=post.date.year(); %>
+        <% if (lastYear !==currentYear) { %>
+            <% if (lastYear !==undefined) { %>
+                    </div>
+                </div>
+            <% } %>
+                <% lastYear=currentYear; %>
+                    <div class="card year-group">
+                        <div class="year-header">
+                            <%= currentYear %>
+                        </div>
+                        <div class="archive-list">
+        <% } %>
+        <div class="archive-item">
+            <span class="archive-date">
+                <%= date(post.date, "MM-DD" ) %>
+            </span>
+            <a class="archive-title" href="<%- url_for(post.path) %>">
+                <%= post.title || 'Untitled' %>
+            </a>
+        </div>
+    <% }) %>
+    <% if (page.posts.length> 0) { %>
+            </div>
+        </div>
+    <% } %>
+</section>
+
+<nav class="page-nav">
+    <%- paginator({ prev_text: '<' , next_text: '>' }) %>
+</nav>

@@ -1,0 +1,40 @@
+.year-group {
+    padding: 10px;
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+.year-header {
+    font-size: 24px;
+    text-shadow: 0 0 10px var(--white-main),
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main);
+    padding: 10px 0;
+}
+
+.archive-list {
+    padding: 10px;
+    background-color: var(--white-main);
+    box-shadow: 0 0 0 0.5px var(--black-main),
+        0 0 0 1.5px var(--white-main);
+}
+
+.archive-item {
+    padding: 5px 0;
+    width: 100%;
+}
+
+.archive-title {
+    margin-left: 5px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.archive-title:hover {
+    border-bottom-color: var(--primary-color);
+}

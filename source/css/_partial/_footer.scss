@@ -1,0 +1,18 @@
+footer {
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+    height: 80px;
+    display: flex;
+}
+
+.copyright {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0 10px var(--white-main),
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main);
+}

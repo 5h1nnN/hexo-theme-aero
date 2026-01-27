@@ -1,0 +1,86 @@
+.avatar-widget {
+    position: sticky;
+    z-index: 4;
+    top: -5px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: 20%;
+}
+
+.avatar-bg {
+    background: var(--aero-grad);
+    backdrop-filter: blur(3px);
+    margin-top: -30px;
+    margin-left: -10px;
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 1px var(--white-main),
+        0 0 0 1.5px var(--black-main),
+        3px 3px 10px rgba(from var(--black-main) r g b / 0.6);
+}
+
+.profile-img {
+    width: 110px;
+    box-sizing: border-box;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    border: 1px solid var(--white-main);
+}
+
+.profile-link {
+    position: relative;
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    margin: 6px;
+    border-radius: 20px;
+}
+
+.profile-icon {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.profile-link::after {
+    border-radius: 20px;
+}
+
+.profile-link:active {
+    top: 1px;
+}
+
+
+.profile {
+    padding-top: 10px;
+    padding-left: 100px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: larger;
+}
+
+.about {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.profile-widget {
+    position: relative;
+    margin-top: -90px;
+    text-shadow: 0 0 10px var(--white-main),
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main);
+    text-align: center;
+}

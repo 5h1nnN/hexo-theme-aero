@@ -1,0 +1,36 @@
+<div class="header" id="pjax-header">
+    <header class="card">
+        <p class="blog-title">
+            <%= config.subtitle %>
+        </p>
+    </header>
+    <nav class="button-bar">
+        <ul class="nav-links">
+            <li>
+                <a href="/" class="button link-home <%= is_home() ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <img src="/image/icon/vista_messenger.jpg" alt="home" class="icon">
+                        <span>Home</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives" class="button <%= is_archive() || is_current('archives') ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <img src="/image/icon/vista_book_1.jpg" alt="posts" class="icon">Archives    
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/about" class="button <%= is_current('about') ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <img src="/image/icon/vista_pc_1.jpg" alt="about" class="icon">About
+                    </span>
+                </a>
+            </li>
+            
+
+        </ul>
+
+    </nav>
+</div>

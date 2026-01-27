@@ -1,0 +1,113 @@
+.post-list {
+    margin-top: 20px;
+}
+
+.post-item {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.post-cover {
+    width: 40%;
+    flex-shrink: 0;
+    padding: 10px 0;
+}
+
+.post-cover img {
+    width: 100%;
+    box-shadow: 0 0 0 0.5px var(--black-main),
+        0 0 0 1.5px var(--white-main);
+}
+
+.post-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.post-full {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    position: relative;
+    font-size: 24px;
+    text-shadow: 0 0 10px var(--white-main),
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main);
+}
+
+.post-meta {
+    position: relative;
+    text-shadow: 0 0 10px var(--white-main),
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main);
+    padding: 5px 0;
+}
+
+.post-excerpt {
+    position: relative;
+    padding: 10px;
+    background-color: var(--white-main);
+    box-shadow: 0 0 0 0.5px var(--black-main),
+        0 0 0 1.5px var(--white-main);
+}
+
+.post-content {
+    position: relative;
+    padding: 10px;
+    background-color: var(--white-main);
+    box-shadow: 0 0 0 0.5px var(--black-main),
+        0 0 0 1.5px var(--white-main);
+}
+
+.rm-link {
+    position: relative;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-self: flex-end;
+    margin-top: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: -15px;
+    text-decoration: none;
+    color: var(--black-main);
+    text-shadow: 0 1px 0 var(--white-main);
+    transition: all 0.2s;
+}
+
+.rm-link::after {
+    border-radius: 15px;
+}
+
+.rm-link:active {
+    top: 1px;
+}
+
+.read-more {
+    position: relative;
+    z-index: 2;
+}
+
+.article-title {
+    display: block;
+    padding: 20px 0;
+    font-size: 30px;
+}

@@ -1,0 +1,28 @@
+menu:
+  about: /about
+favicon:
+  enable: true
+  icon: /image/icon/vista_messenger.jpg
+profile:
+  enable: true
+  author: ''
+  avatar: ''  # for example, https://avatars.githubusercontent.com/username
+  avatar_link: '' # for example, https://github.com/username
+  social: # you can customize which and how many social links to show
+    - name: Github
+      link: '' # https://github.com/username
+      icon: /image/icon/github.png
+    - name: Bilibili
+      link: '' # https://space.bilibili.com/youruid
+      icon: /image/icon/bilibili.png
+music:
+  enable: true
+  autoplay: false
+  songs:
+    - title: ''
+      artist: ''
+      cover: ''
+      url: ''
+math:
+  enable: true
+  engine: mathjax
