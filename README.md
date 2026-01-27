@@ -14,6 +14,14 @@
 
 - 支持代码高亮
 
+  - 需在根目录`_config.yml`中增加：
+
+  ```yaml
+  highlight: 
+    	enable: true
+    	hljs: true
+  ```
+
 - 使用MathJax渲染LaTeX公式
 
   - 需在文章前加上`mathjax: enable`

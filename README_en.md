@@ -13,10 +13,22 @@ Demo Site: [ShinN's Blog](https://sh1nn.top)
 ## Features
 
 - Supports code highlighting.
+
+  - In the `_config.yml` file located in the root directory, add：
+
+    ```yaml
+    highlight: 
+      	enable: true
+      	hljs: true
+    ```
+
 - Renders LaTeX equations using MathJax.
   - Requires adding `mathjax: enable` to the post front-matter.
+
 - Music player functionality.
+
 - Uses PJAX for optimized loading.
+
 - Customizable theme colors.
   - Theme colors and wallpaper can be modified in `source/css/_variables.scss`.
 
