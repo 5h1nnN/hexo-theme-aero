@@ -52,6 +52,19 @@ description: >
 
 Navigate to the `themes/aero` folder and modify the theme's `_config.yml` to configure social media links, music playback settings, etc.
 
+## Dependencies
+
+This theme requires the following plugins to be installed:
+
+```bash
+# SCSS Renderer
+npm install hexo-renderer-sass --save
+
+# Markdown Renderer
+npm uninstall hexo-renderer-marked
+npm install hexo-renderer-markdown-it --save
+```
+
 ## Credits
 
 Some style designs are referenced from https://github.com/khang-nd/7.css

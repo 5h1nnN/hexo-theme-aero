@@ -59,6 +59,19 @@ description: >
 
 进入`theme/aero`文件夹，在主题`_config.yml`中修改社交媒体链接、音乐播放等配置
 
+## 依赖项
+
+本主题需要安装以下插件：
+
+```bash
+# SCSS 渲染器
+npm install hexo-renderer-sass --save
+
+# Markdown 渲染器
+npm uninstall hexo-renderer-marked
+npm install hexo-renderer-markdown-it --save
+```
+
 ## 其他
 
 部分样式设计参考https://github.com/khang-nd/7.css
