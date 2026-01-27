@@ -1,6 +1,6 @@
 # hexo-theme-aero
 
-[[English](#)|中文]
+[[English](README_en.md)|中文]
 
 ## 简介
 
@@ -16,7 +16,7 @@
 
 - 使用MathJax渲染LaTeX公式
 
-  需在文章前加上`mathjax: enable`
+  - 需在文章前加上`mathjax: enable`
 
 - 音乐播放功能
 
@@ -24,7 +24,7 @@
 
 - 自定义主题颜色
 
-  可在`source/css/_variables.scss`中更改主题颜色和壁纸
+  - 可在`source/css/_variables.scss`中更改主题颜色和壁纸
 
 
 ## 使用
