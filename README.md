@@ -29,6 +29,8 @@
 
 ## 使用
 
+建站参考[Hexo官方文档](https://hexo.io/zh-cn/docs/)
+
 在博客根目录下运行：
 
 ```bash

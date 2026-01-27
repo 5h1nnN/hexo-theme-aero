@@ -22,6 +22,8 @@ Demo Site: [ShinN's Blog](https://sh1nn.top)
 
 ## Usage
 
+[Hexo Docs](https://hexo.io/docs/)
+
 Run the following command in the root directory of your blog:
 
 ```bash
