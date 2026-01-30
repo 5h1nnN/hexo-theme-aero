@@ -91,10 +91,11 @@
     color: var(--black-main);
     text-shadow: 0 1px 0 var(--white-main);
     transition: all 0.2s;
+    overflow: hidden;
 }
 
 .rm-link::after {
-    border-radius: 15px;
+    border-radius: inherit;
 }
 
 .rm-link:active {

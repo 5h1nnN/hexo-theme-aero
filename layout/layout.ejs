@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>
         <%= config.title %>
     </title>
@@ -20,18 +21,25 @@
     <div class="container">
         <!-- header -->
         <%- partial('_partial/header') %>
+
+        <div class="button mobile-menu-btn" id="mobile-menu-btn">
+            <span class="menu-icon">☰</span>
+        </div>
+
             <div class="main-layout">
-                <aside>
+                <aside id="sidebar">
                     <%- partial('_partial/widget') %>
                 </aside>
                 <main id="pjax-container">
                     <%- body %>
                 </main>
+                <div class="sidebar-mask" id="sidebar-mask"></div>
             </div>
             <!-- footer -->
             <%- partial('_partial/footer') %>
     </div>
 
+    <script src="/js/responsive.js"></script>
     <script src="/js/music.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
     <script>
@@ -55,7 +63,7 @@
                     processEscapes: true
                 },
                 options: {
-                    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] // 忽略的代码块
                 }
             };
         </script>

@@ -131,6 +131,7 @@
     cursor: pointer;
     font-size: 14px;
     transition: all 0.1s;
+    overflow: hidden;
 }
 
 .ctrl-btn span {
@@ -143,6 +144,7 @@
     height: 50px;
     border-radius: 70% 30% 70% 30% / 70% 30% 70% 30%;
     font-size: 18px;
+    overflow: hidden;
 }
 
 .play-btn span {
@@ -159,9 +161,9 @@
 }
 
 .ctrl-btn::after {
-    border-radius: 50%;
+    border-radius: inherit;
 }
 
 .play-btn::after {
-    border-radius: 70% 30% 70% 30% / 70% 30% 70% 30%;
+    border-radius: inherit;
 }
