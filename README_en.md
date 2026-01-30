@@ -12,6 +12,8 @@ Demo Site: [ShinN's Blog](https://sh1nn.top)
 
 ## Features
 
+- Supports responsive layout.
+
 - Supports code highlighting.
 
   - In the `_config.yml` file located in the root directory, add：
