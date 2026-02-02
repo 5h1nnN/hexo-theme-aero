@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // 播放歌曲
     function playSong() {
         widget.classList.add('playing');
-        playIcon.innerText = '⏸'; // 暂停图标
+        playIcon.classList.remove('ri-play-large-fill');
+        playIcon.classList.add('ri-pause-large-fill');
         audio.play().catch(e => console.log("Auto-play prevented:", e));
         isPlaying = true;
     }
@@ -44,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // 暂停歌曲
     function pauseSong() {
         widget.classList.remove('playing');
-        playIcon.innerText = '▶'; // 播放图标
+        playIcon.classList.remove('ri-pause-large-fill');
+        playIcon.classList.add('ri-play-large-fill');
         audio.pause();
         isPlaying = false;
     }
