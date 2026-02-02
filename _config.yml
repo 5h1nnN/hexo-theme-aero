@@ -6,8 +6,8 @@ favicon:
 profile:
   enable: true
   author: ''
-  avatar: ''  # for example, https://avatars.githubusercontent.com/username
-  avatar_link: '' # for example, https://github.com/username
+  avatar: ''  # Your avatar image, for example, https://avatars.githubusercontent.com/username
+  avatar_link: '' # The link you click on the avatar and jump to, for example, https://github.com/username
   social: # you can customize which and how many social links to show
     - name: Github
       link: '' # https://github.com/username
